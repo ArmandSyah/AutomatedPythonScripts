@@ -3,6 +3,10 @@
 
 import os
 import shutil
+# import logging
+# logging.basicConfig(level=logging.DEBUG, format= ' %(asctime)s - %(levelname)s - %(message)s')
+# logging.debug('Start of the program')
+
 
 
 def selectcopy(source_folder, dest_folder, extension):
@@ -14,8 +18,10 @@ def selectcopy(source_folder, dest_folder, extension):
 
     for foldername, subfolders, filenames in os.walk(source_folder):
         for filename in filenames:
+            # logging.debug('File: ' + filename)
             if filename.endswith('.' + extension):
                 print(filename)
                 shutil.copy(os.path.join(foldername, filename), dest_folder)
 
-selectcopy('C:\\', 'D:\\Stuff', 'pdf')
+selectcopy('C:\\Users\\Armand Syahtama\\Dropbox\\Resume shit', 'D:\\Stuff', 'pdf')
+# logging.debug('End of Program')

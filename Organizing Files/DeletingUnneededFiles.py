@@ -9,9 +9,9 @@ def checkfolder(folder):
 
     for foldername, subfolders, filenames in os.walk(source_folder):
         if os.path.getsize(foldername) > 1000000:
-            print(os.path.abspath(foldername))
+            print('folder: ' + os.path.abspath(foldername))
         for filename in filenames:
-            if os.path.getsize(os.path.join(foldername, filename)) > 1000000:
-                print(os.path.abspath(filename))
+            if os.path.getsize(os.path.join(foldername, filename)) > 100000000:
+                print('file: ' + os.path.abspath(filename))
 
-checkfolder('C:\\')
+checkfolder('C:\\Users\\Armand Syahtama\\')
