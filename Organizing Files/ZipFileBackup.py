@@ -2,9 +2,11 @@
 # backupToZip.py - Copies an entire folder and its contents into
 # a ZIP file whose filename increments.
 
-import zipfile, os
+import zipfile
+import os
 
-def backupToZip(folder):
+
+def backuptozip(folder):
     # Backup the entire contents of "folder" into a ZIP File
     folder = os.path.abspath(folder)
 
@@ -33,4 +35,4 @@ def backupToZip(folder):
     backup_zip.close()
     print('Done.')
 
-backupToZip('C:\\death')
+backuptozip('C:\\death')
