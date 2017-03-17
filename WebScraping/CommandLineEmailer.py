@@ -11,10 +11,11 @@ if len(sys.argv) != 3:
     sys.exit(-1)
 
 # Open Chrome Browser with Selinum Webdriver and open up gmail
-browser = webdriver.Chrome('C:\\Users\\gamer\\Downloads\\chromedriver_win32\\chromedriver.exe')
+# Downloaded chromedriver and placed inside Python folder
+browser = webdriver.Chrome()
 browser.get('http://gmail.com')
 
-# Input email and password and go to my account
+# Input email and submit
 try:
     email_elem = browser.find_element_by_id('Email')
     email_elem.send_keys('fakemail')
@@ -23,6 +24,7 @@ except:
     print("Could not find proper email")
     sys.exit(1)
 
+# Input password and go to my account
 try:
     browser.implicitly_wait(10)
     password_elem = browser.find_element_by_id('Passwd')
@@ -32,6 +34,7 @@ except:
     print("Could not find proper password")
     sys.exit(1)
 
+# Pressing the compose button on the gmail page
 try:
     browser.implicitly_wait(10)
     link_elem = browser.find_element_by_xpath("//div[text()='COMPOSE']")
@@ -40,6 +43,7 @@ except:
     print('Could not find proper div')
     sys.exit(1)
 
+# Inputs the email passed through system args into recipient section
 try:
     browser.implicitly_wait(10)
     to_elem = browser.find_element_by_xpath("//textarea[@name='to']")
@@ -48,6 +52,7 @@ except:
     print('Could not find proper textarea')
     sys.exit(1)
 
+# Inputs string into subject line
 try:
     browser.implicitly_wait(10)
     subject_elem = browser.find_element_by_xpath("//input[@name='subjectbox']")
@@ -56,6 +61,7 @@ except:
     print('Could not find proper input')
     sys.exit(1)
 
+# Inputs a message from sys args into body section
 try:
     browser.implicitly_wait(10)
     message_elem = browser.find_element_by_xpath("//div[@aria-label='Message Body']")
@@ -64,6 +70,7 @@ except:
     print('Could not find proper message box')
     sys.exit(1)
 
+# Programatically clicks the send buttons and sends email
 try:
     browser.implicitly_wait(10)
     send_elem = browser.find_element_by_xpath("//div[@aria-label='Send ‪(Ctrl-Enter)‬']")
