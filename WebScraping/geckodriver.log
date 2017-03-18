@@ -1,0 +1,30 @@
+1489782913327	geckodriver	INFO	Listening on 127.0.0.1:56559
+1489782915351	mozprofile::profile	INFO	Using profile path C:\Users\ARMAND~1\AppData\Local\Temp\rust_mozprofile.3aTR9W0oKBDl
+1489782915356	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489782915630	geckodriver::marionette	INFO	Connecting to Marionette on localhost:56576
+1489783141077	geckodriver	INFO	Listening on 127.0.0.1:57226
+1489783143006	mozprofile::profile	INFO	Using profile path C:\Users\ARMAND~1\AppData\Local\Temp\rust_mozprofile.IgInkP2v4EfQ
+1489783143010	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489783143035	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57233
+1489783144017	Marionette	INFO	Listening on port 57233
+1489783144414	Marionette	WARN	TLS certificate errors will be ignored for this session
+1489783167530	geckodriver	INFO	Listening on 127.0.0.1:58033
+1489783169556	mozprofile::profile	INFO	Using profile path C:\Users\ARMAND~1\AppData\Local\Temp\rust_mozprofile.CWa6GnAwVohH
+1489783169560	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489783169605	geckodriver::marionette	INFO	Connecting to Marionette on localhost:58039
+1489783170737	Marionette	INFO	Listening on port 58039
+1489783171158	Marionette	WARN	TLS certificate errors will be ignored for this session
+1489844310140	geckodriver	INFO	Listening on 127.0.0.1:60510
+1489844312148	mozprofile::profile	INFO	Using profile path C:\Users\ARMAND~1\AppData\Local\Temp\rust_mozprofile.u9ljpdJ6vPwB
+1489844312152	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489844312427	geckodriver::marionette	INFO	Connecting to Marionette on localhost:60529
+1489844313565	Marionette	INFO	Listening on port 60529
+1489844314048	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 5676] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143
+1489844339492	geckodriver	INFO	Listening on 127.0.0.1:61489
+1489844341527	mozprofile::profile	INFO	Using profile path C:\Users\ARMAND~1\AppData\Local\Temp\rust_mozprofile.JTX65MU3ALUa
+1489844341530	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489844341554	geckodriver::marionette	INFO	Connecting to Marionette on localhost:61504
+1489844342389	Marionette	INFO	Listening on port 61504
+1489844342694	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 1532] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143
