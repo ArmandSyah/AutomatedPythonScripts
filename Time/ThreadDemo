@@ -1,0 +1,16 @@
+#! python3
+# ThreadDemo.py - Simple script to demonstrate Multi-Threading programming in Python
+
+import threading
+import time
+
+print('Starting ThreadDemo.py')
+
+
+def nap():
+    time.sleep(5)
+    print('Wake Up!')
+
+thread_object = threading.Thread(target=nap)
+thread_object.start()
+print('End of program.')
